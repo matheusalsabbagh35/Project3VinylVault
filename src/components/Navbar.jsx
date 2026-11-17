@@ -1,5 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
-const Navbar = ({ cartCount, onToggleCart }) => {
+
+const Navbar = ({ cartCount, onOpenCart }) => {
   return (
     <header className="navbar">
       <Link to="/" className="logo">
@@ -9,7 +11,7 @@ const Navbar = ({ cartCount, onToggleCart }) => {
       <nav>
         <Link to="/">Catalog</Link>
 
-        <button onClick={onToggleCart}>Cart ({cartCount})</button>
+        <button onClick={onOpenCart}>Cart ({cartCount})</button>
       </nav>
     </header>
   );
