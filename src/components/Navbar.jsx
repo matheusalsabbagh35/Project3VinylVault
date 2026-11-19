@@ -3,16 +3,22 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ cartCount, onOpenCart }) => {
   return (
-    <header className="navbar">
-      <Link to="/" className="logo">
-        VinylVault
-      </Link>
+    <header className="site-header">
+      <div className="header-inner">
+        <Link to="/" className="brand-logo">
+          VinylVault
+        </Link>
 
-      <nav>
-        <Link to="/">Catalog</Link>
+        <nav className="nav-actions">
+          <Link to="/" className="nav-link">
+            Catalog
+          </Link>
 
-        <button onClick={onOpenCart}>Cart ({cartCount})</button>
-      </nav>
+          <button className="btn-cart-badge" onClick={onOpenCart}>
+            Cart <span className="badge-pill">{cartCount}</span>
+          </button>
+        </nav>
+      </div>
     </header>
   );
 };

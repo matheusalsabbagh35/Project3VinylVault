@@ -17,7 +17,7 @@ function CatalogPage({ albums, onAddToCart }) {
     <div className="catalog-container">
       <header className="catalog-hero">
         <h1>Welcome to VinylVault</h1>
-        <p>Explore our collection of vinyl records.</p>
+        <p>Enjoy The Best Music Selection</p>
       </header>
 
       <div className="filter-bar">

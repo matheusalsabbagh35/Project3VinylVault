@@ -6,6 +6,7 @@ import CatalogPage from "./pages/CatalogPage";
 import AlbumPage from "./pages/AlbumPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import { ALBUMS } from "./data/albums";
+import "./App.css";
 
 const App = () => {
   const [cart, setCart] = useState([]);
